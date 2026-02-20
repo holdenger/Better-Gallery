@@ -1,0 +1,66 @@
+name: Release Extension
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve version from tag
+        id: version
+        shell: bash
+        run: |
+          if [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
+            VERSION="${GITHUB_REF_NAME#v}"
+          else
+            VERSION="$(python3 - <<'PY'
+import json
+from pathlib import Path
+manifest = json.loads(Path("manifest.json").read_text(encoding="utf-8"))
+print(manifest["version"])
+PY
+)"
+          fi
+          echo "version=${VERSION}" >> "${GITHUB_OUTPUT}"
+
+      - name: Validate tag matches manifest version
+        if: github.ref_type == 'tag'
+        shell: bash
+        run: |
+          TAG_VERSION="${{ steps.version.outputs.version }}"
+          MANIFEST_VERSION="$(python3 - <<'PY'
+import json
+from pathlib import Path
+manifest = json.loads(Path("manifest.json").read_text(encoding="utf-8"))
+print(manifest["version"])
+PY
+)"
+          if [[ "${MANIFEST_VERSION}" != "${TAG_VERSION}" ]]; then
+            echo "Tag version (${TAG_VERSION}) does not match manifest version (${MANIFEST_VERSION})."
+            exit 1
+          fi
+
+      - name: Build extension zip
+        shell: bash
+        run: |
+          chmod +x scripts/package-extension.sh
+          scripts/package-extension.sh "${{ steps.version.outputs.version }}"
+
+      - name: Publish GitHub release
+        if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: v${{ steps.version.outputs.version }}
+          generate_release_notes: true
+          files: dist/better-gallery-v${{ steps.version.outputs.version }}.zip
