@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery Enhancer</title>
+    <link rel="stylesheet" href="viewer.css" />
+  </head>
+  <body>
+    <header id="topbar">
+      <div id="brand" class="brand">Gallery Enhancer</div>
+
+      <div class="actions">
+        <a id="btnOriginalGallery" class="btn" href="#" target="_blank" rel="noreferrer noopener">
+          <span class="btn-glyph" aria-hidden="true">&#8599;</span><span id="btnOriginalGalleryLabel">Original Gallery</span>
+        </a>
+
+        <a id="btnFullRes" class="btn" href="#" target="_blank" rel="noreferrer noopener">
+          <span class="btn-glyph" aria-hidden="true">&#9713;</span><span id="btnFullResLabel">Show full resolution image</span>
+        </a>
+
+        <button id="btnDownloadImage" class="btn" type="button">
+          <span class="btn-glyph" aria-hidden="true">&#8595;</span><span id="btnDownloadImageLabel">Download image</span>
+        </button>
+
+        <button id="btnDownloadAll" class="btn" type="button">
+          <span class="btn-glyph btn-glyph-svg" aria-hidden="true">
+            <svg viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+              <rect x="2" y="2.5" width="12" height="3" rx="0.8"></rect>
+              <rect x="3.5" y="5.5" width="9" height="8" rx="1.2"></rect>
+              <path d="M8 7.2v3.6"></path>
+              <path d="M6.5 9.5L8 11l1.5-1.5"></path>
+            </svg>
+          </span>
+          <span id="btnDownloadAllLabel">Download gallery</span>
+        </button>
+
+        <button id="btnFullscreen" class="btn icon" title="Fullscreen" aria-label="Fullscreen">
+          ⛶
+        </button>
+      </div>
+    </header>
+
+    <main id="stage">
+      <div id="loading">Loading…</div>
+
+      <img id="img" alt="" />
+
+      <button id="prev" class="nav left" aria-label="Previous">
+        <svg class="nav-glyph" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+          <path d="M10 3.5L5.5 8 10 12.5"></path>
+        </svg>
+      </button>
+      <button id="next" class="nav right" aria-label="Next">
+        <svg class="nav-glyph" viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+          <path d="M6 3.5L10.5 8 6 12.5"></path>
+        </svg>
+      </button>
+
+      <div id="counter">0/0</div>
+    </main>
+
+    <script src="providers.js"></script>
+    <script src="viewer.js"></script>
+  </body>
+</html>

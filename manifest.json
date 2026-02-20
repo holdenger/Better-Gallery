@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version": "0.1.0",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "__MSG_actionTitle__",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": ["downloads", "storage", "tabs"],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "host_permissions": [
+    "https://games.tiscali.cz/*",
+    "https://foto.games.tiscali.cz/*",
+    "https://im.tiscali.cz/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://games.tiscali.cz/*",
+        "https://foto.games.tiscali.cz/*"
+      ],
+      "js": ["providers.js", "content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["viewer.html", "viewer.css", "viewer.js", "providers.js"],
+      "matches": [
+        "https://games.tiscali.cz/*",
+        "https://foto.games.tiscali.cz/*"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery Enhancer</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1 id="popupTitle">Gallery Enhancer</h1>
+
+      <section id="supportedState" class="state" hidden>
+        <p class="line"><strong id="moduleName"></strong></p>
+        <label class="toggle-line" for="moduleToggle">
+          <span id="toggleLabel">Enabled on this site</span>
+          <input id="moduleToggle" type="checkbox" />
+        </label>
+      </section>
+
+      <section id="unsupportedState" class="state" hidden>
+        <p id="unsupportedText" class="line">This page is not supported.</p>
+      </section>
+
+      <button id="openSettings" class="btn" type="button">Open settings</button>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+    <script src="providers.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

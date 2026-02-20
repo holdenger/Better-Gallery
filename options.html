@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="pageTitle">Gallery Enhancer Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1 id="heading">Gallery Enhancer Settings</h1>
+      <p id="subtitle" class="subtitle">Enable or disable gallery modules by website.</p>
+
+      <div class="actions">
+        <button id="btnEnableAll" class="btn" type="button">Enable all</button>
+        <button id="btnDisableAll" class="btn" type="button">Disable all</button>
+      </div>
+
+      <section id="modules" class="modules" aria-label="Modules"></section>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="providers.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

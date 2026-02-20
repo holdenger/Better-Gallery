@@ -1,0 +1,193 @@
+{
+  "extName": {
+    "message": "Better Gallery"
+  },
+  "extDescription": {
+    "message": "Opens supported galleries in a clean, responsive viewer."
+  },
+  "actionTitle": {
+    "message": "Better Gallery"
+  },
+  "viewerBrand": {
+    "message": "Better Gallery"
+  },
+  "viewerOriginalGallery": {
+    "message": "Original Gallery"
+  },
+  "viewerShowFullRes": {
+    "message": "Show full resolution image"
+  },
+  "viewerDownloadImage": {
+    "message": "Download image"
+  },
+  "viewerDownloadGallery": {
+    "message": "Download gallery"
+  },
+  "viewerFullscreen": {
+    "message": "Fullscreen"
+  },
+  "viewerPrev": {
+    "message": "Previous"
+  },
+  "viewerNext": {
+    "message": "Next"
+  },
+  "viewerLoading": {
+    "message": "Loading..."
+  },
+  "viewerPreparingZip": {
+    "message": "Preparing ZIP..."
+  },
+  "viewerZippingProgress": {
+    "message": "Zipping $first$/$second$...",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "viewerDownloadFailed": {
+    "message": "Download failed: $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "viewerBatchDownloadFailed": {
+    "message": "Batch download failed: $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "viewerFetchImageFailedHttp": {
+    "message": "Failed to fetch image: HTTP $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "viewerDownloadsApiUnavailable": {
+    "message": "Downloads API is unavailable."
+  },
+  "viewerDownloadDidNotStart": {
+    "message": "Download did not start."
+  },
+  "viewerConfirmZip": {
+    "message": "Download $first$ images as ZIP?\n\n$second$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "viewerFailedLoadImage": {
+    "message": "Failed to load image."
+  },
+  "viewerMissingGalleryParam": {
+    "message": "Missing gallery parameter."
+  },
+  "viewerUnknownProvider": {
+    "message": "Unknown gallery provider."
+  },
+  "viewerProviderDisabled": {
+    "message": "Module \"$first$\" is disabled in settings.",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "viewerInvalidGalleryUrl": {
+    "message": "Invalid gallery URL."
+  },
+  "viewerProviderRegistryMissing": {
+    "message": "Provider registry is missing."
+  },
+  "providerGalleryJsonFailedHttp": {
+    "message": "Gallery JSON failed: HTTP $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "providerGalleryJsonParseFailed": {
+    "message": "Failed to parse gallery JSON/JSONP"
+  },
+  "providerNoOriginalImages": {
+    "message": "No original images found in gallery JSON"
+  },
+  "popupOpenSettings": {
+    "message": "Open settings"
+  },
+  "optionsTitle": {
+    "message": "Gallery Enhancer Settings"
+  },
+  "optionsHeading": {
+    "message": "Gallery Enhancer Settings"
+  },
+  "optionsSubtitle": {
+    "message": "Enable or disable gallery modules by website."
+  },
+  "optionsEnableAll": {
+    "message": "Enable all"
+  },
+  "optionsDisableAll": {
+    "message": "Disable all"
+  },
+  "optionsModulesAria": {
+    "message": "Modules"
+  },
+  "optionsProviderMeta": {
+    "message": "$first$ (gallery: $second$)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "optionsSaved": {
+    "message": "Saved."
+  },
+  "optionsSettingsLoaded": {
+    "message": "Settings loaded."
+  },
+  "optionsProviderRegistryMissing": {
+    "message": "Provider registry is missing."
+  },
+  "optionsFailedSaveSettings": {
+    "message": "Failed to save settings: $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsFailedLoadSettings": {
+    "message": "Failed to load settings: $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupEnabledOnSite": {
+    "message": "Enabled on this site"
+  },
+  "popupUnsupportedPage": {
+    "message": "This page is not supported."
+  }
+}

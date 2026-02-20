@@ -1,0 +1,193 @@
+{
+  "extName": {
+    "message": "Lepšia galéria"
+  },
+  "extDescription": {
+    "message": "Otvára podporované galérie v čistom, responzívnom prehliadači."
+  },
+  "actionTitle": {
+    "message": "Lepšia galéria"
+  },
+  "viewerBrand": {
+    "message": "Lepšia galéria"
+  },
+  "viewerOriginalGallery": {
+    "message": "Pôvodná galéria"
+  },
+  "viewerShowFullRes": {
+    "message": "Zobraziť obrázok v plnom rozlíšení"
+  },
+  "viewerDownloadImage": {
+    "message": "Stiahnuť obrázok"
+  },
+  "viewerDownloadGallery": {
+    "message": "Stiahnuť galériu"
+  },
+  "viewerFullscreen": {
+    "message": "Na celú obrazovku"
+  },
+  "viewerPrev": {
+    "message": "Predchádzajúci"
+  },
+  "viewerNext": {
+    "message": "Ďalší"
+  },
+  "viewerLoading": {
+    "message": "Načítavam..."
+  },
+  "viewerPreparingZip": {
+    "message": "Pripravujem ZIP..."
+  },
+  "viewerZippingProgress": {
+    "message": "Zipsujem $first$/$second$...",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "viewerDownloadFailed": {
+    "message": "Sťahovanie zlyhalo: $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "viewerBatchDownloadFailed": {
+    "message": "Hromadné sťahovanie zlyhalo: $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "viewerFetchImageFailedHttp": {
+    "message": "Nepodarilo sa stiahnuť obrázok: HTTP $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "viewerDownloadsApiUnavailable": {
+    "message": "Downloads API nie je dostupné."
+  },
+  "viewerDownloadDidNotStart": {
+    "message": "Sťahovanie sa nespustilo."
+  },
+  "viewerConfirmZip": {
+    "message": "Stiahnuť $first$ obrázkov ako ZIP?\n\n$second$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "viewerFailedLoadImage": {
+    "message": "Nepodarilo sa načítať obrázok."
+  },
+  "viewerMissingGalleryParam": {
+    "message": "Chýba parameter galérie."
+  },
+  "viewerUnknownProvider": {
+    "message": "Neznámy poskytovateľ galérie."
+  },
+  "viewerProviderDisabled": {
+    "message": "Modul \"$first$\" je v nastaveniach vypnutý.",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "viewerInvalidGalleryUrl": {
+    "message": "Neplatná URL galérie."
+  },
+  "viewerProviderRegistryMissing": {
+    "message": "Chýba register providerov."
+  },
+  "providerGalleryJsonFailedHttp": {
+    "message": "Zlyhalo načítanie JSON galérie: HTTP $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "providerGalleryJsonParseFailed": {
+    "message": "Nepodarilo sa spracovať JSON/JSONP galérie"
+  },
+  "providerNoOriginalImages": {
+    "message": "V JSON galérie sa nenašli pôvodné obrázky"
+  },
+  "popupOpenSettings": {
+    "message": "Otvoriť nastavenia"
+  },
+  "optionsTitle": {
+    "message": "Nastavenia Gallery Enhancer"
+  },
+  "optionsHeading": {
+    "message": "Nastavenia Gallery Enhancer"
+  },
+  "optionsSubtitle": {
+    "message": "Zapnite alebo vypnite moduly galérií podľa webu."
+  },
+  "optionsEnableAll": {
+    "message": "Zapnúť všetko"
+  },
+  "optionsDisableAll": {
+    "message": "Vypnúť všetko"
+  },
+  "optionsModulesAria": {
+    "message": "Moduly"
+  },
+  "optionsProviderMeta": {
+    "message": "$first$ (galéria: $second$)",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      },
+      "second": {
+        "content": "$2"
+      }
+    }
+  },
+  "optionsSaved": {
+    "message": "Uložené."
+  },
+  "optionsSettingsLoaded": {
+    "message": "Nastavenia načítané."
+  },
+  "optionsProviderRegistryMissing": {
+    "message": "Chýba register providerov."
+  },
+  "optionsFailedSaveSettings": {
+    "message": "Nepodarilo sa uložiť nastavenia: $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsFailedLoadSettings": {
+    "message": "Nepodarilo sa načítať nastavenia: $first$",
+    "placeholders": {
+      "first": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupEnabledOnSite": {
+    "message": "Povolené na tomto webe"
+  },
+  "popupUnsupportedPage": {
+    "message": "Táto stránka nie je podporovaná."
+  }
+}
