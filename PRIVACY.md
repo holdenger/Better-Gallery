@@ -26,4 +26,5 @@ Better Gallery does not load or execute remote code. All executable code is pack
 
 ## Contact
 
+Email: holden42@gmail.com
 GitHub Issues: https://github.com/holdenger/Better-Gallery/issues
