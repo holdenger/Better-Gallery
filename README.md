@@ -3,7 +3,7 @@
 Better Gallery is a Chromium (MV3) extension that replaces supported web galleries with a cleaner, faster viewer focused on original-resolution images.
 
 Current integration:
-- `GAMES.CZ - Tiscali` (`games.tiscali.cz` / `foto.games.tiscali.cz`)
+- `GAMES.CZ - Tiscali` ([games.tiscali.cz](https://games.tiscali.cz/) / [foto.games.tiscali.cz](https://foto.games.tiscali.cz/))
 
 ## Features
 
@@ -24,7 +24,7 @@ Current integration:
 ## Install from Releases (Microsoft Edge / Chrome)
 
 1. Open the Releases page:
-   - `https://github.com/holdenger/Better-Gallery/releases`
+   - [https://github.com/holdenger/Better-Gallery/releases](https://github.com/holdenger/Better-Gallery/releases)
 2. Download the latest ZIP asset (for example `better-gallery-v0.1.1.zip`).
 3. Extract the ZIP to a local folder.
 
@@ -83,4 +83,4 @@ Providers are stored in `providers` array and are toggleable via `chrome.storage
 
 ## License
 
-Not specified yet.
+MIT. See `LICENSE.md`.
