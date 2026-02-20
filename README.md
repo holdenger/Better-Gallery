@@ -2,6 +2,8 @@
 
 Better Gallery is a Chromium (MV3) extension that replaces supported web galleries with a cleaner, faster viewer focused on original-resolution images.
 
+![Better Gallery screenshot](screenshots/Better%20Gallery%20-%20screenshot_1280x800.png)
+
 Current integration:
 - `GAMES.CZ - Tiscali` ([games.tiscali.cz](https://games.tiscali.cz/) / [foto.games.tiscali.cz](https://foto.games.tiscali.cz/))
 
