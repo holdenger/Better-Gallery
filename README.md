@@ -21,17 +21,26 @@ Current integration:
   - Options page: toggle all providers globally
 - Localization: English, Slovak, Czech.
 
-## Install (Microsoft Edge / Chrome)
+## Install from Releases (Microsoft Edge / Chrome)
 
-1. Open extensions page:
-   - Edge: `edge://extensions`
-   - Chrome: `chrome://extensions`
+1. Open the Releases page:
+   - `https://github.com/holdenger/Better-Gallery/releases`
+2. Download the latest ZIP asset (for example `better-gallery-v0.1.1.zip`).
+3. Extract the ZIP to a local folder.
+
+### Microsoft Edge
+
+1. Open `edge://extensions`.
 2. Enable **Developer mode**.
 3. Click **Load unpacked**.
-4. Select this folder:
-   - `/Users/michal.zila/GalleryEnhancer`
+4. Select the extracted extension folder.
 
-After code changes, use **Reload** on the extension card.
+### Google Chrome
+
+1. Open `chrome://extensions`.
+2. Enable **Developer mode**.
+3. Click **Load unpacked**.
+4. Select the extracted extension folder.
 
 ## Project Structure
 
