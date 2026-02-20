@@ -23,13 +23,7 @@ jobs:
           if [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
             VERSION="${GITHUB_REF_NAME#v}"
           else
-            VERSION="$(python3 - <<'PY'
-import json
-from pathlib import Path
-manifest = json.loads(Path("manifest.json").read_text(encoding="utf-8"))
-print(manifest["version"])
-PY
-)"
+            VERSION="$(python3 -c 'import json, pathlib; print(json.loads(pathlib.Path("manifest.json").read_text(encoding="utf-8"))["version"])')"
           fi
           echo "version=${VERSION}" >> "${GITHUB_OUTPUT}"
 
@@ -38,13 +32,7 @@ PY
         shell: bash
         run: |
           TAG_VERSION="${{ steps.version.outputs.version }}"
-          MANIFEST_VERSION="$(python3 - <<'PY'
-import json
-from pathlib import Path
-manifest = json.loads(Path("manifest.json").read_text(encoding="utf-8"))
-print(manifest["version"])
-PY
-)"
+          MANIFEST_VERSION="$(python3 -c 'import json, pathlib; print(json.loads(pathlib.Path("manifest.json").read_text(encoding="utf-8"))["version"])')"
           if [[ "${MANIFEST_VERSION}" != "${TAG_VERSION}" ]]; then
             echo "Tag version (${TAG_VERSION}) does not match manifest version (${MANIFEST_VERSION})."
             exit 1
